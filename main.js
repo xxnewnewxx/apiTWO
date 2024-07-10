@@ -14,15 +14,15 @@
 
 // getLatesNews();
 
-const api_key = "140c1074224f4a21ad30e882f4092dfc";
+const api_key = `https://noona-times-v2.netlify.app/top-headlines`;
 let news = [];
-const pageSize = 10;
+const pageSize = 8;
 let page = 2;
 let category = "";
 let keyword = "";
 const getLatestNews = async () => {
   const url = new URL(
-    `https://stephnews.netlify.app/top-headlines?country=us&pageSize=${pageSize}&page=${page}${category}${keyword}`
+    `https://lucky-klepon-e2f176.netlify.app//top-headlines?country=us&pageSize=${pageSize}&page=${page}${category}${keyword}`
   );
 
   const response = await fetch(url);
