@@ -22,7 +22,7 @@ let category = "";
 let keyword = "";
 const getLatestNews = async () => {
   const url = new URL(
-    `https://lucky-klepon-e2f176.netlify.app//top-headlines?country=us&pageSize=${pageSize}&page=${page}${category}${keyword}`
+    `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?country=us&pageSize=${pageSize}&page=${page}${category}${keyword}`
   );
 
   const response = await fetch(url);
